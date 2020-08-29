@@ -1,0 +1,7 @@
+  #Working code
+---
+- hosts: win
+  tasks:
+  - name: Run remote ps script
+    win_command:
+            powershell.exe -ExecutionPolicy ByPass -File C:/ps/p.ps1
